@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange-color:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+    --transparent-color:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:hsl(0, 0%, 95%);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-light-gray);
+}
+.wrapper{
+    height: 450px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .first-card{
+    height: 100%;
+    width: 300px;
+    background-color: var(--orange-color);
+}
+.wrapper .second-card{
+    height: 100%;
+    width: 300px;
+    background-color: var(--dark-cyan);
+}
+.wrapper .third-card{
+    height: 100%;
+    width: 300px;
+    background-color: var(--very-dark-cyan);
+}
