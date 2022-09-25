@@ -19,24 +19,55 @@ body{
     background-color: var(--very-light-gray);
 }
 .wrapper{
-    height: 450px;
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-.wrapper .first-card{
-    height: 100%;
-    width: 300px;
+.card{
+    padding:2.5rem;
+}
+.card h1{
+    font-size: 32px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin: 1.4rem 0;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+}
+.card p{
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-gray);
+    opacity: 0.75;
+    line-height: 1.5;
+    margin: 0 0.2rem 5rem 0;
+}
+.card button{
+    padding: 0.8rem 1.7rem;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.first-card{
     background-color: var(--orange-color);
+    border-radius: 8px 0 0 8px;
 }
-.wrapper .second-card{
-    height: 100%;
-    width: 300px;
+.first-card button{
+    color: var(--orange-color);
+}
+.second-card button{
+    color: var(--dark-cyan);
+}
+.third-card button{
+    color: var(--very-dark-cyan);
+}
+.second-card{
     background-color: var(--dark-cyan);
 }
-.wrapper .third-card{
-    height: 100%;
-    width: 300px;
+.third-card{
     background-color: var(--very-dark-cyan);
+    border-radius: 0 8px 8px 0;
 }
