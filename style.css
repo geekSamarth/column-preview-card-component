@@ -19,7 +19,7 @@ body{
     background-color: var(--very-light-gray);
 }
 .wrapper{
-    width: 800px;
+    width: 750px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -37,19 +37,21 @@ body{
     opacity: 0.9;
 }
 .card p{
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Lexend Deca', sans-serif;
     color: var(--very-light-gray);
-    opacity: 0.75;
-    line-height: 1.5;
-    margin: 0 0.2rem 5rem 0;
+    opacity: 0.78;
+    line-height: 1.6;
+    margin: 0 0.2rem 4.6rem 0;
 }
 .card button{
+    margin: .4rem 0 0 0 ;
     padding: 0.8rem 1.7rem;
     border-radius: 25px;
     outline: none;
     border: none;
     cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .first-card{
     background-color: var(--orange-color);
@@ -70,4 +72,27 @@ body{
 .third-card{
     background-color: var(--very-dark-cyan);
     border-radius: 0 8px 8px 0;
+}
+/* applying active states to the buttons of the preview card component */
+
+/* .card button:hover{
+    border: 2px solid var(--very-light-gray);
+    background-color: transparent;
+    color: var(--very-light-gray);
+} */
+
+/* applying responsiveness to the perview card component */
+
+@media screen and (max-width:450px) {
+    .wrapper{
+        margin: 3rem 0;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .first-card{
+        border-radius: 8px 8px 0 0;
+    }
+    .third-card{
+        border-radius: 0 0 8px 8px;
+    }
 }
