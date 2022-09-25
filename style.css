@@ -87,7 +87,7 @@ body{
 @media screen and (max-width:550px) {
     .wrapper{
         margin: 3rem 0;
-        width: 80%;
+        width: 85%;
         grid-template-columns: 1fr;
     }
     .first-card{
