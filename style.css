@@ -19,7 +19,8 @@ body{
     background-color: var(--very-light-gray);
 }
 .wrapper{
-    width: 750px;
+    max-width: 750px;
+    min-height: 450px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -75,15 +76,15 @@ body{
 }
 /* applying active states to the buttons of the preview card component */
 
-/* .card button:hover{
+.card button:hover{
     border: 2px solid var(--very-light-gray);
     background-color: transparent;
     color: var(--very-light-gray);
-} */
+}
 
 /* applying responsiveness to the perview card component */
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     .wrapper{
         margin: 3rem 0;
         width: 80%;
